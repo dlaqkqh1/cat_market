@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8" >
+                <title>Page Title</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+                <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+                <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+            </head>
+            <style>
+                    .center {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                    }
+                </style>
+<body>
+        <div data-role="page" id="start">
+                <div data-role="content">
+                    <h1 style="text-align:center;">우주 마켓</h1>
+                            <img src="cutewju.png" class="center">
+                    
+                    <div style="text-align:center;">
+                        <a href="#main" data-role="button" data-inline="true" data-transition="pop">우주 주문하기</a>
+                    </div>
+                </div>
+            </div>
+        <div data-role="page" id="main">
+        <div data-role="content">
+            <div data-role="navbar" style="margin-bottom: 10px;">
+                <ul>
+                    <li><a href="#main" class="ui-btn-active">메인</a></li>
+                    <li><a href="#store">상점</a></li>
+                    <li><a href="#random">랜덤박스</a></li>
+                    <li><a href="#intro">우주 소개</a></li>
+                </ul>
+            </div>
+            <center><img src="1.png" style="width: 100%"></center>
+            
+            <h3>오늘의 추천상품</h3>
+            <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+                    <li><a href="#">
+                            <img src="12.jpg"width ="144" height="144">
+                            <h2>고양이 머리납작</h2>
+                            <p>고양이 이름 : 우주, 품종 : job</p>
+                        </a>
+                        <a href="#purchase1" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                    </li>
+                    <li><a href="#">
+                            <img src="13.jpg"width ="144" height="144">
+                            <h2>고양이 발</h2>
+                            <p>고양이 이름 : 우주, 품종 : job</p>
+                        </a>
+                        <a href="#purchase1" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                    </li>
+                    <li><a href="#">
+                            <img src="11.jpg"width ="144" height="144">
+                            <h2>고양이 머리</h2>
+                            <p>고양이 이름 : 우주, 품종 : job</p>
+                        <a href="#purchase1" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                    </li>
+                </ul>
+                <div data-role="popup" id="purchase1" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+                    <h3>구매?</h3>
+                    <p>고양이 저렴한 가격으로 빨리 사다.</p>
+                    <a href="#purchase1" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">구매: $10.99</a>
+                    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">취소</a>
+                </div>
+                 </ul>
+            </div>
+            <div style="text-align:center;"><a href="#maker" data-transition="turn" ><h4>만든 이</h4></a></div>
+        </div>
+        <div data-role="page" id="store">
+                <div data-role="content">
+                <div data-role="navbar" style="margin-bottom: 10px;">
+                        <ul>
+                            <li><a href="#main" class="ui-btn-active">메인</a></li>
+                            <li><a href="#store">상점</a></li>
+                            <li><a href="#random">랜덤박스</a></li>
+                            <li><a href="#intro">우주 소개</a></li>
+                        </ul>
+                    </div>
+                <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+                        <li><a href="#">
+                                <img src="뱅갈.jpg"width ="144" height="144">
+                                <h2>뱅갈</h2>
+                                <p>350,000원</p>
+                            </a>
+                            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                        </li>
+                        <li><a href="#">
+                                <img src="먼치킨.jpg"width ="144" height="144">
+                                <h2>먼치킨</h2>
+                                <p>300원</p>
+                            </a>
+                            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                        </li>
+                        <li><a href="#">
+                                <img src="스코티쉬폴드.jpg"width ="144" height="144">
+                                <h2>스코티쉬폴드</h2>
+                                <p>270,000원</p>
+                            </a>
+                            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                        </li>
+                        <li><a href="#">
+                                <img src="터키시앙고라.jpg"width ="144" height="144">
+                                <h2>터키시앙고라</h2>
+                                <p>670,000원</p>
+                            </a>
+                            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                        </li>
+                        <li><a href="#">
+                                <img src="페르시안.jpg"width ="144" height="144">
+                                <h2>페르시안</h2>
+                                <p>1,100,000원</p>
+                            </a>
+                            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                        </li>
+                        <li><a href="#">
+                                <img src="캣닢.jpg" width="100" height="100">
+                                <h2>고양이들이 먹으면 미치는 가루 </h2>
+                                <p>50,000원</p>
+                            </a>
+                            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase cat</a>
+                        </li>
+                    </ul>
+                    <div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+                            <h3>구매?</h3>
+                            <p>고양이 저렴한 가격으로 빨리 사다.</p>
+                            <a href="#purchase"  class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">구매화면으로 이동</a>
+                            <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">취소</a>
+                        </div>
+                </div>           
+    </div>
+</div>
+        </div>
+            <div data-role="page" id="random">
+                    <div data-role="content">
+                    <div class="component">
+                        <div data-role="navbar" style="margin-bottom: 10px;">
+                            <ul>
+                                <li><a href="#main" class="ui-btn-active">메인</a></li>
+                                <li><a href="#store">상점</a></li>
+                                <li><a href="#random">랜덤박스</a></li>
+                                <li><a href="#intro">우주 소개</a></li>
+                            </ul>
+                        </div>
+                            <center><div><h3 class ="componentHead">고양이 랜덤 박스</h3></div></center>
+                            <div class="ui-grid-a" style="text-align: center;">
+                              <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="2.png"width ="100" height="100">  <br>1번(13%)</div></div>
+                              <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="3.jpg"width ="100" height="100">   <br>2번(15%)</div></div>
+                              <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="10.jpg"width ="100" height="100">   <br>3번(20%)</div></div>
+                              <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="5.png"width ="100" height="100">   <br>4번(20%)</div></div>
+                              <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="6.png"width ="100" height="100">   <br>5번(25%)</div></div>
+                              <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="7.jpg"width ="100" height="100">   <br>6번(1%)</div></div>
+                              <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="8.jpg"width ="100" height="100">   <br>7번(4%)</div></div>
+                              <div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="9.jpg"width ="100" height="100">   <br>8번(2%)</div></div>
+                            </div><!-- /grid-a -->
+                          </div><!--component-->
+                        </ul>
+    </div>
+    </div>
+            <div data-role="page" id="maker">
+                    <div data-role="header">
+                        <h1>ㅇㅈ 마켓 - 만든이</h1>
+                    </div>
+                    <div data-role="content" style="padding:1em;">
+                        <div data-role="navbar" style="margin-bottom: 10px;">
+                            <ul>    
+                                <li><a href="#main" class="ui-btn-active">메인</a></li>
+                                <li><a href="#store">상점</a></li>
+                                <li><a href="#random">랜덤박스</a></li>
+                                <li><a href="#intro">우주 소개</a></li>
+                            </ul>
+                        </div>
+                        <center><img src="5.png" style="width: 200px; height: 140px;"></center>
+                        <ul data-role="listview">
+                            <li style="text-align: center">백승훈 - 팀장</li>
+                            <li style="text-align: center">이준원 - 개발</li>
+                            <li style="text-align: center">전형탁 - 개발</li>
+                            <li style="text-align: center">임찬우 - 개발</li>
+                            <li style="text-align: center">정보교 - 개발</li>
+                            <li style="text-align: center">우주 - 소스제공</li>
+                        </ul>
+                        <img src="소개.png" style="width: 100%; height: 240px;">
+                    </div>
+                    <div data-role="footer"> 
+                    </div>
+                </div>
+                <div data-role="page" id="intro">
+                        <div data-role="content">
+                            <div data-role="navbar" style="margin-bottom: 10px;">
+                                <ul>
+                                    <li><a href="#main" class="ui-btn-active">메인</a></li>
+                                    <li><a href="#store">상점</a></li>
+                                    <li><a href="#random">랜덤박스</a></li>
+                                    <li><a href="#intro">우주 소개</a></li>
+                                </ul>
+                            </div>
+                            <h2 style="text-align:center;">우리 우주를 소개합니다.</h2>
+                            <div style="text-align:center;">
+                                <img src="food.png" class="center">
+                                <h3><strong>노채, 골증열, 담이 성한 것과 치루를 치료하는데 국을 끓여서 빈속에 먹는다<br>-동의보감</strong></h3>
+                                <img src="good.jpg" class="center">
+                                <h4>관절염 치료, 보신 등을 위해 우리 조상님이 개발하셨지만 일부 고양이성애자들에 의해 금지되어버린 비운의 로스트 테크놀로지로,
+                                    끝내주는 맛으로 남녀노소 모두 즐길 수 있다.<br>
+                                    예부터 우리 민족이 즐겨 먹던 전통음식으로, 고양이 요리를 반대하여 우리 대한민국 고유의 민족성을 지우려 하는
+                                    사람들은 싹 다 친일파들 이라고 생각하면 된다.
+                                </h4>
+                            </div>     
+                        </div>   
+                </div>
+                <div data-role="page" id="purchase1">
+                    <div data-role="content">
+                            <div data-role="navbar" style="margin-bottom: 10px;">
+                                    <ul>
+                                        <li><a href="#main" class="ui-btn-active">메인으로 돌아가기</a></li>
+                                    </ul>
+                            </div>
+                        <div>
+                            <form>
+                                <label for="select">구매물품</label>
+                                <select name ="select" id="select">
+                                    <option value="1">고양이 머리납작</option>
+                                    <option value="2">고양이 발</option>
+                                    <option value="3">고양이 머리</option>
+                                </select>
+                            </form>
+                            <form>
+                                    <label for="who">받으실분</label>
+                                    <input type="text" data-clear-btn="true" name="who" id="who" value="필수">
+                                    <label for="pnumber">전화번호</label>
+                                    <input type="text" data-clear-btn="true" name="pnumber" id="pnumber" value="필수">
+                                    <label for="address">주소</label>
+                                    <input type="text" data-clear-btn="true" name="address" id="address" value="필수">
+                                </form>
+                        </div>
+                        <div data-role="navbar" style="margin-bottom: 10px;">
+                                <ul>
+                                    <li><a href="#success" class="ui-btn-active">결제</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="page" id="purchase">
+                        <div data-role="content">
+                                <div data-role="navbar" style="margin-bottom: 10px;">
+                                        <ul>
+                                            <li><a href="#main" class="ui-btn-active">메인으로 돌아가기</a></li>
+                                        </ul>
+                                </div>
+                            <div>
+                                <form>
+                                    <label for="select">구매물품</label>
+                                    <select name ="select" id="select">
+                                        <option value="1" id="c1">뱅갈</option>
+                                        <option value="2" id="c2">먼치킨</option>
+                                        <option value="3" id="c3">스코티쉬폴드</option>
+                                        <option value="4" id="c4">터키시앙고라</option>
+                                        <option value="5" id="c5">페르시안</option>
+                                        <option value="6" id="c6">고양이들이 먹으면 미치는 가루</option>
+                                    </select>
+                                </form>
+                                <form>
+                                    <label for="who">받으실분</label>
+                                    <input type="text" data-clear-btn="true" name="who" id="who" value="필수">
+                                    <label for="pnumber">전화번호</label>
+                                    <input type="text" data-clear-btn="true" name="pnumber" id="pnumber" value="필수">
+                                    <label for="address">주소</label>
+                                    <input type="text" data-clear-btn="true" name="address" id="address" value="필수">
+                                </form>
+                            </div>
+                            <div data-role="navbar" style="margin-bottom: 10px;">
+                                    <ul>
+                                        <li><a href="#success" class="ui-btn-active">결제</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div data-role="page" id="success">
+                            <div data-role="content">
+                                <img src="귀요미.png" style="width:100%">
+                                <center><h2>결제 완료!</h2></center>
+                                <div data-role="navbar" style="margin-bottom: 10px;">
+                                        <ul>
+                                            <li><a href="#main" class="ui-btn-active">메인으로 돌아가기</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+</body>
+</html>
